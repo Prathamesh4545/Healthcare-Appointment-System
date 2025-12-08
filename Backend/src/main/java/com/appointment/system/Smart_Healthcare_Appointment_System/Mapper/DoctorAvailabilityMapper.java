@@ -20,9 +20,9 @@ public class DoctorAvailabilityMapper {
         dto.setDoctorId(availability.getDoctor().getId());
         dto.setDoctorName(availability.getDoctor().getFullName());
 
-        if (availability.getDoctor().getSpecialization() != null) {
-            dto.setSpecializationName(availability.getDoctor().getSpecialization().getName());
-        }
+//        if (availability.getDoctor().getSpecialization() != null) {
+//            dto.setSpecializationName(availability.getDoctor().getSpecialization().getName());
+//        }
 
         dto.setStartTime(availability.getStartTime().toString());
         dto.setEndTime(availability.getEndTime().toString());
